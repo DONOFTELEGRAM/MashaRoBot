@@ -91,7 +91,7 @@ buttons = [
         InlineKeyboardButton(
             text="Sᴏᴜʀᴄᴇ 💫", callback_data="source_"),
         InlineKeyboardButton(
-            text="Sᴜᴘᴘᴏʀᴛ 📢", url="https://t.me/wastebots"
+            text="Sᴜᴘᴘᴏʀᴛ 📢", url="https://t.me/AndreaSupportChat"
         ),
     ],
 ]
@@ -354,7 +354,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
                  ❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  ❍ I check for admins' permissions before executing any command and more stuffs
                  \n_Masha's licensed under the GNU General Public License v3.0_
-                 Here is the [💾Repository](https://github.com/DONOFTELEGRAM/MashaRoBot).
+                 Here is the [Contact My Owner](https://t.me/TERA_BAAP_VILLAIN_XD).
                  If you have any question about Masha, let us know at @AndreaSupportChat.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -382,7 +382,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
     if query.data == "source_":
         query.message.edit_text(
             text=""" Hi..🌟 I'm *Eʟɪsᴀ*
-                 \nHere is the [Source Code](https://github.com/DONOFTELEGRAM/MashaRoBot) .""",
+                 \nHere is the [Source Code](https://t.me/TERA_BAAP_VILLAIN_XD) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
