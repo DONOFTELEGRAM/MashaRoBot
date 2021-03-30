@@ -211,7 +211,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            "Heya :) PM me if you have any questions on how to use me!".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -433,7 +433,7 @@ def get_help(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Help",
+                            text="Help ❔",
                             url="t.me/{}?start=help".format(context.bot.username),
                         )
                     ]
