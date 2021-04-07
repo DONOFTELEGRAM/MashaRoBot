@@ -89,17 +89,17 @@ def warn(
         if soft_warn:  # punch
             chat.unban_member(user.id)
             reply = (
-                f"<code>❕</code><b>Punch Event</b>\n"
-                f"<code> </code><b>•  User:</b> {mention_html(user.id, user.first_name)}\n"
-                f"<code> </code><b>•  Count:</b> {limit}"
+                f"<code></code><b>•  Punch Alert..!</b>\n"
+                f"<code></code><b>•  User:</b> {mention_html(user.id, user.first_name)}\n"
+                f"<code></code><b>•  Count:</b> {limit}"
             )
 
         else:  # ban
             chat.kick_member(user.id)
             reply = (
-                f"<code>❕</code><b>Ban Event</b>\n"
-                f"<code> </code><b>•  User:</b> {mention_html(user.id, user.first_name)}\n"
-                f"<code> </code><b>•  Count:</b> {limit}"
+                f"<code></code><b>•  Ban Alert..!</b>\n"
+                f"<code></code><b>•  User:</b> {mention_html(user.id, user.first_name)}\n"
+                f"<code></code><b>•  Count:</b> {limit}"
             )
 
         for warn_reason in reasons:
@@ -121,19 +121,19 @@ def warn(
             [
                 [
                     InlineKeyboardButton(
-                        "🔘 Remove warn", callback_data="rm_warn({})".format(user.id)
+                        "Remove warn", callback_data="rm_warn({})".format(user.id)
                     )
                 ]
             ]
         )
 
         reply = (
-            f"<code>❕</code><b>Warn Event</b>\n"
-            f"<code> </code><b>•  User:</b> {mention_html(user.id, user.first_name)}\n"
-            f"<code> </code><b>•  Count:</b> {num_warns}/{limit}"
+            f"<code></code><b>•  Warn Alert..!</b>\n"
+            f"<code></code><b>•  User:</b> {mention_html(user.id, user.first_name)}\n"
+            f"<code></code><b>•  Count:</b> {num_warns}/{limit}"
         )
         if reason:
-            reply += f"\n<code> </code><b>•  Reason:</b> {html.escape(reason)}"
+            reply += f"\n<code></code><b>•  Reason:</b> {html.escape(reason)}"
 
         log_reason = (
             f"<b>{html.escape(chat.title)}:</b>\n"
