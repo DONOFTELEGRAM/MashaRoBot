@@ -81,7 +81,7 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="Aᴅᴅ Mᴇ 🎉", url="t.me/ElizaRoBot?startgroup=true"),
+            text="Aᴅᴅ Mᴇ 🎉", url="t.me/AndreaBetaRoBot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="Aʙᴏᴜᴛ 🔖", callback_data="masha_"),
@@ -346,7 +346,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Eʟɪsᴀ 🌟*, a powerful group management bot built to help you manage your group easily.
+            text="""  I'm *Andrea Beta*, a powerful group management bot built to help you manage your group easily.
                  ❍ I can restrict users.
                  ❍ I can greet users with customizable welcome messages and even set a group's rules.
                  ❍ I have an advanced anti-flood system.
@@ -381,7 +381,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🌟 I'm *Eʟɪsᴀ*
+            text=""" Hi.. I'm *Andrea Beta*
                  \nHere is the [Source Code](https://t.me/TERA_BAAP_VILLAIN_XD) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
